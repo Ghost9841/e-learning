@@ -30,7 +30,7 @@ const HeroSection = () => {
         <div className="flex flex-col justify-center py-14 md:py-0 relative z-20">
             <div className="text-center md:text-left space-y-10 lg:max-w-[400px] ml-20">
               <motion.h1
-              variants={FadeUp(0.6)}
+              variants={FadeUp(1)}
               initial="initial"
               animate="animate"
               className="text-3xl lg:text-5xl font-bold !leading-snug">An Investment In
@@ -41,7 +41,7 @@ const HeroSection = () => {
               </motion.h1>
               {/* Button */}
               <motion.div 
-              variants={FadeUp(0.8)}
+              variants={FadeUp(1.2)}
               initial="initial"
               animate="animate"
               className="flex justify-center md:justify-start">
@@ -58,7 +58,7 @@ const HeroSection = () => {
             <motion.img 
             initial={{x:50, opacity:0}}
             animate={{x:0, opacity:1}}
-            transition={{duration:0.6, delay:0.4, ease: "easeInOut"}}
+            transition={{duration:1, delay:0.7, ease: "easeInOut"}}
             src={hero} 
             alt="Hero Section Image" 
             className="w-[400px] xl:w-[400px] md:block relative z-10 drop-shadow" />

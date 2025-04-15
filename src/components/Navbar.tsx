@@ -31,12 +31,12 @@ const Navbar = () => {
         <motion.div 
         initial={{y:-50,opacity:0}}
         animate={{opacity:1, y:0}}
-        transition={{ease: "easeIn", delay:0.4,duration:0.8}}
+        transition={{ease: "easeIn", delay:0.4,duration:1}}
         className="p-[1rem] flex justify-between items-center">
             {/* Logo Section */}
             <div className="">
                 <h1 className="font-bold text-2xl">
-                    Halin Newa English School
+                    ABC School
                 </h1>
             </div>
             {/* Menu Section */}

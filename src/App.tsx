@@ -1,5 +1,6 @@
 import HeroSection from "./components/HeroSection"
 import Navbar from "./components/Navbar"
+import Services from "./components/Services"
 
 
 const App = () => {
@@ -7,7 +8,7 @@ const App = () => {
     <main className="overflow-x-hidden bg-white text-dark p-[1rem]">
       <Navbar/> 
       <HeroSection/>
-
+      <Services/>
     </main>
   )
 }
