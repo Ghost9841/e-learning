@@ -1,4 +1,7 @@
+import { motion } from "framer-motion";
 import { IoMdMenu } from "react-icons/io";
+
+
 const NavMenu = [
 {
     id:1,
@@ -25,7 +28,11 @@ const NavMenu = [
 const Navbar = () => {
   return (
     <nav className="">
-        <div className="p-[1rem] flex justify-between items-center">
+        <motion.div 
+        initial={{y:-50,opacity:0}}
+        animate={{opacity:1, y:0}}
+        transition={{ease: "easeIn", delay:0.4,duration:0.8}}
+        className="p-[1rem] flex justify-between items-center">
             {/* Logo Section */}
             <div className="">
                 <h1 className="font-bold text-2xl">
@@ -50,7 +57,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <IoMdMenu className="text-4xl"/>
           </div>
-        </div>
+        </motion.div>
     </nav>
   )
 }
