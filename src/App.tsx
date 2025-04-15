@@ -1,3 +1,4 @@
+import Banner from "./components/Banner"
 import HeroSection from "./components/HeroSection"
 import Navbar from "./components/Navbar"
 import Services from "./components/Services"
@@ -9,6 +10,7 @@ const App = () => {
       <Navbar/> 
       <HeroSection/>
       <Services/>
+      <Banner/>
     </main>
   )
 }
